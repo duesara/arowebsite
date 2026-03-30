@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aro Photography Portfolio | A curated collection of stories, sessions, and the spaces between. View weddings, portraits, events, and lifestyle photography.">
+
+  <!-- Open Graph Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Portfolio | Aro Photography">
+  <meta property="og:description" content="A curated collection of stories, sessions, and the spaces between.">
+  <meta property="og:url" content="https://arophotography.com/portfolio">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1554048612-b6a482bc67e5?w=1200">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "Aro Photography Portfolio",
+    "description": "A curated collection of photography stories, sessions, and moments.",
+    "creator": {
+      "@type": "Person",
+      "name": "Aro",
+      "url": "https://arophotography.com"
+    },
+    "url": "https://arophotography.com/portfolio"
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&family=Inter:wght@400;500&family=IBM+Plex+Sans:wght@400&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Favicon Placeholder -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%23D4AF37' width='100' height='100'/%3E%3Ctext x='50' y='65' font-size='60' font-weight='bold' fill='%23000' text-anchor='middle' font-family='serif'%3EARO%3C/text%3E%3C/svg%3E">
+
+  <title>Portfolio | Aro Photography</title>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar__container">
+      <a href="index.html" class="navbar__logo" aria-label="Aro Photography Home">ARO</a>
+
+      <ul class="navbar__menu" id="navMenu">
+        <li class="navbar__item">
+          <a href="index.html" class="navbar__link">Home</a>
+        </li>
+        <li class="navbar__item">
+          <a href="portfolio.html" class="navbar__link navbar__link--active">Portfolio</a>
+        </li>
+        <li class="navbar__item">
+          <a href="contact.html" class="navbar__link">Contact</a>
+        </li>
+        <li class="navbar__item">
+          <a href="booking.html" class="navbar__link btn btn-primary">Book Now</a>
+        </li>
+      </ul>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle mobile menu" aria-expanded="false">
+        <span class="nav-toggle__line"></span>
+        <span class="nav-toggle__line"></span>
+        <span class="nav-toggle__line"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu" id="mobileMenu" role="region" aria-label="Mobile navigation menu">
+    <ul class="mobile-menu__list">
+      <li><a href="index.html" class="mobile-menu__link">Home</a></li>
+      <li><a href="portfolio.html" class="mobile-menu__link">Portfolio</a></li>
+      <li><a href="contact.html" class="mobile-menu__link">Contact</a></li>
+      <li><a href="booking.html" class="mobile-menu__link btn btn-primary">Book Now</a></li>
+    </ul>
+  </div>
+
+  <!-- Page Header -->
+  <header class="page-header" style="background-image: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.6) 100%), url('https://images.unsplash.com/photo-1554048612-b6a482bc67e5?w=1920'); background-size: cover; background-position: center;" role="banner">
+    <div class="page-header__content">
+      <h1 class="hero-title">Portfolio</h1>
+      <p class="page-header__subtitle">A curated collection of stories, sessions, and the spaces between.</p>
+    </div>
+  </header>
+
+  <!-- Filter Bar -->
+  <section class="filter-bar" aria-label="Portfolio filter options">
+    <div class="filter-bar__container" id="filter-bar">
+      <!-- Filter buttons will be loaded dynamically -->
+    </div>
+  </section>
+
+  <!-- Gallery Grid -->
+  <section class="section portfolio-section" aria-label="Portfolio gallery">
+    <div class="section__container">
+      <div class="gallery-grid" id="gallery-grid">
+        <p style="text-align: center; color: #666; padding: 2rem;">Loading portfolio...</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-label="Image lightbox viewer" aria-hidden="true">
+    <button class="lightbox__close" aria-label="Close lightbox">×</button>
+    <button class="lightbox__prev" aria-label="Previous image">‹</button>
+    <button class="lightbox__next" aria-label="Next image">›</button>
+    <figure class="lightbox__figure">
+      <img src="" alt="" class="lightbox__img">
+      <figcaption class="lightbox__caption"></figcaption>
+    </figure>
+  </div>
+
+  <!-- CTA Section -->
+  <section class="section cta-section" aria-labelledby="portfolio-cta-title">
+    <div class="section__container">
+      <h2 id="portfolio-cta-title" class="cta-section__title">Ready to create your own story?</h2>
+      <p class="cta-section__subtitle">Every project starts with a conversation. Let's work together.</p>
+      <a href="booking.html" class="btn btn-primary">Book Your Session</a>
+    </div>
+  </section>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__container">
+      <div class="footer__column footer__brand">
+        <p class="footer__logo">ARO</p>
+        <p class="footer__tagline">Stories worth seeing.</p>
+        <p class="footer__description">Capturing light, emotion, and real moments with cinematic beauty.</p>
+      </div>
+
+      <div class="footer__column footer__nav">
+        <h3 class="footer__heading">Quick Links</h3>
+        <ul class="footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="booking.html">Booking</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__column footer__connect">
+        <h3 class="footer__heading">Connect</h3>
+        <ul class="footer__links">
+          <li><a href="https://instagram.com/arophotography" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          <li><a href="https://pinterest.com/arophotography" target="_blank" rel="noopener noreferrer">Pinterest</a></li>
+          <li><a href="https://linkedin.com/company/arophotography" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="mailto:aro@arophotography.com">aro@arophotography.com</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; 2026 Aro Photography. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="main.js"></script>
+</body>
+</html>

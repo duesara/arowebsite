@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Book a Session | Aro Photography | Professional photography sessions for portraits, weddings, events, and brand work. Transparent pricing and a simple booking process.">
+
+  <!-- Open Graph Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Book a Session | Aro Photography">
+  <meta property="og:description" content="Professional photography sessions. Choose from portrait, wedding, event, or lifestyle packages.">
+  <meta property="og:url" content="https://arophotography.com/booking">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?w=1200">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Photography Session Booking",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Aro Photography",
+      "url": "https://arophotography.com"
+    },
+    "description": "Book a professional photography session with Aro Photography. Choose from portraits, weddings, events, and lifestyle packages.",
+    "url": "https://arophotography.com/booking",
+    "areaServed": {
+      "@type": "City",
+      "name": "Los Angeles"
+    }
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&family=Inter:wght@400;500&family=IBM+Plex+Sans:wght@400&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Favicon Placeholder -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%23D4AF37' width='100' height='100'/%3E%3Ctext x='50' y='65' font-size='60' font-weight='bold' fill='%23000' text-anchor='middle' font-family='serif'%3EARO%3C/text%3E%3C/svg%3E">
+
+  <title>Book a Session | Aro Photography</title>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar__container">
+      <a href="index.html" class="navbar__logo" aria-label="Aro Photography Home">ARO</a>
+
+      <ul class="navbar__menu" id="navMenu">
+        <li class="navbar__item">
+          <a href="index.html" class="navbar__link">Home</a>
+        </li>
+        <li class="navbar__item">
+          <a href="portfolio.html" class="navbar__link">Portfolio</a>
+        </li>
+        <li class="navbar__item">
+          <a href="contact.html" class="navbar__link">Contact</a>
+        </li>
+        <li class="navbar__item">
+          <a href="booking.html" class="navbar__link btn btn-primary navbar__link--active">Book Now</a>
+        </li>
+      </ul>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle mobile menu" aria-expanded="false">
+        <span class="nav-toggle__line"></span>
+        <span class="nav-toggle__line"></span>
+        <span class="nav-toggle__line"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu" id="mobileMenu" role="region" aria-label="Mobile navigation menu">
+    <ul class="mobile-menu__list">
+      <li><a href="index.html" class="mobile-menu__link">Home</a></li>
+      <li><a href="portfolio.html" class="mobile-menu__link">Portfolio</a></li>
+      <li><a href="contact.html" class="mobile-menu__link">Contact</a></li>
+      <li><a href="booking.html" class="mobile-menu__link btn btn-primary">Book Now</a></li>
+    </ul>
+  </div>
+
+  <!-- Page Header -->
+  <header class="page-header" style="background-image: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.6) 100%), url('https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?w=1920'); background-size: cover; background-position: center;" role="banner">
+    <div class="page-header__content">
+      <h1 class="hero-title">Book a Session</h1>
+      <p class="page-header__subtitle">Great photography begins before the shutter clicks. Let's start with what matters most — your story, your vision, your moment.</p>
+    </div>
+  </header>
+
+  <!-- Sessions & Pricing Section -->
+  <section class="section sessions" aria-labelledby="sessions-title">
+    <div class="section__container">
+      <h2 id="sessions-title" class="section__title">Sessions & Pricing</h2>
+
+      <div class="sessions-grid">
+        <!-- Portrait Session Card -->
+        <article class="session-card">
+          <div class="session-card__header">
+            <h3 class="session-card__title">Portrait Session</h3>
+            <p class="session-card__price">$350</p>
+            <p class="session-card__duration">1–2 Hours</p>
+          </div>
+          <p class="session-card__description">
+            One-on-one sessions built around you — your energy, your angles, your narrative. Includes pre-session consultation, 1–2 hour shoot at a location of your choice, and 25+ edited digital images delivered within two weeks.
+          </p>
+          <a href="#booking-form" class="btn btn-primary session-card__btn">Book This Session</a>
+        </article>
+
+        <!-- Wedding Photography Card -->
+        <article class="session-card">
+          <div class="session-card__header">
+            <h3 class="session-card__title">Wedding Photography</h3>
+            <p class="session-card__price">From $2,500</p>
+            <p class="session-card__duration">Full Day</p>
+          </div>
+          <p class="session-card__description">
+            Comprehensive coverage from getting ready through the last dance. Includes engagement session, full-day coverage, second shooter, and 300+ edited images in a private online gallery. Custom packages available.
+          </p>
+          <a href="#booking-form" class="btn btn-primary session-card__btn">Book This Session</a>
+        </article>
+
+        <!-- Event Coverage Card -->
+        <article class="session-card">
+          <div class="session-card__header">
+            <h3 class="session-card__title">Event Coverage</h3>
+            <p class="session-card__price">From $800</p>
+            <p class="session-card__duration">3–6 Hours</p>
+          </div>
+          <p class="session-card__description">
+            Corporate events, launches, galas, and gatherings documented with editorial precision. Includes pre-event planning, 3–6 hours of coverage, and 100+ edited images delivered within one week.
+          </p>
+          <a href="#booking-form" class="btn btn-primary session-card__btn">Book This Session</a>
+        </article>
+
+        <!-- Lifestyle & Brand Card -->
+        <article class="session-card">
+          <div class="session-card__header">
+            <h3 class="session-card__title">Lifestyle & Brand</h3>
+            <p class="session-card__price">$500</p>
+            <p class="session-card__duration">2–3 Hours</p>
+          </div>
+          <p class="session-card__description">
+            Visual content for personal brands, small businesses, and creative projects. Includes creative direction consultation, 2–3 hour shoot across multiple setups, and 40+ edited images optimized for web and social.
+          </p>
+          <a href="#booking-form" class="btn btn-primary session-card__btn">Book This Session</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="section how-it-works" aria-labelledby="how-it-works-title">
+    <div class="section__container">
+      <h2 id="how-it-works-title" class="section__title">How It Works</h2>
+
+      <div class="how-it-works-grid">
+        <article class="how-it-works-step">
+          <div class="how-it-works-step__number">01</div>
+          <h3 class="how-it-works-step__title">Book</h3>
+          <p class="how-it-works-step__description">
+            Choose your session type, pick a date, and tell me your vision. I'll follow up within 24 hours to confirm details and answer any questions.
+          </p>
+        </article>
+
+        <article class="how-it-works-step">
+          <div class="how-it-works-step__number">02</div>
+          <h3 class="how-it-works-step__title">Shoot</h3>
+          <p class="how-it-works-step__description">
+            We meet, we create, we make it real. Sessions are relaxed, collaborative, and built around making you feel comfortable in front of the camera.
+          </p>
+        </article>
+
+        <article class="how-it-works-step">
+          <div class="how-it-works-step__number">03</div>
+          <h3 class="how-it-works-step__title">Receive</h3>
+          <p class="how-it-works-step__description">
+            Your edited gallery is delivered digitally within the promised timeframe. Every image is color-graded, retouched, and ready to share, print, or frame.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Form Section -->
+  <section class="section booking-form-section" id="booking-form" aria-labelledby="booking-form-title">
+    <div class="section__container">
+      <h2 id="booking-form-title" class="section__title">Request a Booking</h2>
+      <p class="booking-form-section__intro">
+        Fill out the form below and I'll get back to you within 24 hours to finalize the details.
+      </p>
+
+      <form id="booking-form" class="booking-form" method="POST" novalidate>
+        <div class="form-group">
+          <label for="fullName" class="form-label">Full Name</label>
+          <input
+            type="text"
+            id="fullName"
+            name="fullName"
+            class="form-input"
+            placeholder="Your full name"
+            required
+            autocomplete="name"
+            aria-required="true"
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="email" class="form-label">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-input"
+            placeholder="your@email.com"
+            required
+            autocomplete="email"
+            aria-required="true"
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="phone" class="form-label">Phone Number</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            class="form-input"
+            placeholder="(555) 000-0000"
+            autocomplete="tel"
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="sessionType" class="form-label">Session Type</label>
+          <select
+            id="sessionType"
+            name="sessionType"
+            class="form-select"
+            required
+            aria-required="true"
+          >
+            <option value="">Select a session type...</option>
+            <option value="portrait">Portrait Session ($350)</option>
+            <option value="wedding">Wedding Photography (From $2,500)</option>
+            <option value="event">Event Coverage (From $800)</option>
+            <option value="lifestyle">Lifestyle & Brand ($500)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="preferredDate" class="form-label">Preferred Date</label>
+          <input
+            type="date"
+            id="preferredDate"
+            name="preferredDate"
+            class="form-input"
+            required
+            aria-required="true"
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="location" class="form-label">Location / Venue</label>
+          <input
+            type="text"
+            id="location"
+            name="location"
+            class="form-input"
+            placeholder="Where are you envisioning the shoot?"
+            autocomplete="street-address"
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="notes" class="form-label">Additional Notes</label>
+          <textarea
+            id="notes"
+            name="notes"
+            class="form-textarea"
+            placeholder="Anything else I should know? Style preferences, number of people, special requests..."
+            rows="5"
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary booking-form__submit">Request Booking</button>
+      </form>
+
+      <div class="booking-form-section__disclaimer">
+        <p>
+          All pricing is starting rates. Final quotes are customized based on your specific needs and vision. No commitment required — this is just the start of our conversation.
+        </p>
+      </div>
+
+      <!-- Success Message (Hidden) -->
+      <div class="booking-form-section__success" id="bookingSuccess" hidden aria-live="polite" aria-atomic="true">
+        <h3>Booking Request Received!</h3>
+        <p>Thank you! I'll reach out within 24 hours to discuss the details. In the meantime, feel free to browse the <a href="portfolio.html">portfolio</a> for inspiration.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section cta-section" aria-labelledby="booking-cta-title">
+    <div class="section__container">
+      <h2 id="booking-cta-title" class="cta-section__title">Questions Before Booking?</h2>
+      <p class="cta-section__subtitle">Feel free to reach out directly. I'd love to hear about your vision.</p>
+      <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__container">
+      <div class="footer__column footer__brand">
+        <p class="footer__logo">ARO</p>
+        <p class="footer__tagline">Stories worth seeing.</p>
+        <p class="footer__description">Capturing light, emotion, and real moments with cinematic beauty.</p>
+      </div>
+
+      <div class="footer__column footer__nav">
+        <h3 class="footer__heading">Quick Links</h3>
+        <ul class="footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="booking.html">Booking</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__column footer__connect">
+        <h3 class="footer__heading">Connect</h3>
+        <ul class="footer__links">
+          <li><a href="https://instagram.com/arophotography" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          <li><a href="https://pinterest.com/arophotography" target="_blank" rel="noopener noreferrer">Pinterest</a></li>
+          <li><a href="https://linkedin.com/company/arophotography" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="mailto:aro@arophotography.com">aro@arophotography.com</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; 2026 Aro Photography. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="main.js"></script>
+</body>
+</html>

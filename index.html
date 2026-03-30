@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aro Photography | Light. Emotion. Story. A Los Angeles-based photographer capturing real moments with cinematic beauty.">
+
+  <!-- Open Graph Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Aro Photography | Light. Emotion. Story.">
+  <meta property="og:description" content="A Los Angeles-based photographer capturing real moments with cinematic beauty. Weddings, portraits, and brand photography.">
+  <meta property="og:url" content="https://arophotography.com">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=1200">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Aro Photography",
+    "description": "Photography that feels like the truth — raw, beautiful, and entirely yours.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Los Angeles",
+      "addressLocality": "Los Angeles",
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    },
+    "url": "https://arophotography.com",
+    "telephone": "",
+    "email": "aro@arophotography.com",
+    "image": "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=1200",
+    "priceRange": "$$$",
+    "sameAs": [
+      "https://instagram.com/arophotography",
+      "https://pinterest.com/arophotography",
+      "https://linkedin.com/company/arophotography"
+    ]
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&family=Inter:wght@400;500&family=IBM+Plex+Sans:wght@400&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Favicon Placeholder -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%23D4AF37' width='100' height='100'/%3E%3Ctext x='50' y='65' font-size='60' font-weight='bold' fill='%23000' text-anchor='middle' font-family='serif'%3EARO%3C/text%3E%3C/svg%3E">
+
+  <title>Aro Photography | Light. Emotion. Story.</title>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar__container">
+      <a href="index.html" class="navbar__logo" aria-label="Aro Photography Home">ARO</a>
+
+      <ul class="navbar__menu" id="navMenu">
+        <li class="navbar__item">
+          <a href="index.html" class="navbar__link navbar__link--active">Home</a>
+        </li>
+        <li class="navbar__item">
+          <a href="portfolio.html" class="navbar__link">Portfolio</a>
+        </li>
+        <li class="navbar__item">
+          <a href="contact.html" class="navbar__link">Contact</a>
+        </li>
+        <li class="navbar__item">
+          <a href="booking.html" class="navbar__link btn btn-primary">Book Now</a>
+        </li>
+      </ul>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle mobile menu" aria-expanded="false">
+        <span class="nav-toggle__line"></span>
+        <span class="nav-toggle__line"></span>
+        <span class="nav-toggle__line"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu" id="mobileMenu" role="region" aria-label="Mobile navigation menu">
+    <ul class="mobile-menu__list">
+      <li><a href="index.html" class="mobile-menu__link">Home</a></li>
+      <li><a href="portfolio.html" class="mobile-menu__link">Portfolio</a></li>
+      <li><a href="contact.html" class="mobile-menu__link">Contact</a></li>
+      <li><a href="booking.html" class="mobile-menu__link btn btn-primary">Book Now</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <header class="hero" style="background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%), url('https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=1920'); background-size: cover; background-position: center;" role="banner">
+    <div class="hero__content">
+      <h1 class="hero__title">Light. Emotion. Real moments.</h1>
+      <p class="hero__subtitle">Photography that feels like the truth — raw, beautiful, and entirely yours.</p>
+
+      <div class="hero__buttons">
+        <a href="portfolio.html" class="btn btn-secondary">View My Work</a>
+        <a href="booking.html" class="btn btn-primary">Book a Session</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Featured Work Section -->
+  <section class="section featured-work" aria-labelledby="featured-title">
+    <div class="section__container">
+      <h2 id="featured-title" class="section__title">Selected Work</h2>
+      <p class="section__subtitle">A glimpse into recent collaborations and the stories behind them.</p>
+
+      <div class="gallery-grid" id="featured-grid">
+        <p style="text-align: center; color: #666; padding: 2rem;">Loading featured work...</p>
+      </div>
+
+      <div class="featured-work__cta">
+        <a href="portfolio.html" class="btn btn-ghost">View Full Portfolio</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about" aria-labelledby="about-title">
+    <div class="section__container about__container">
+      <div class="about__content">
+        <h2 id="about-title" class="section__title">The Eye Behind the Lens</h2>
+        <p class="about__text">
+          I'm Aro — a Los Angeles-based photographer drawn to the quiet, unscripted seconds between poses. My work lives at the intersection of documentary honesty and cinematic beauty. Whether it's a wedding, a brand shoot, or a Tuesday afternoon portrait, I'm looking for the same thing: something real.
+        </p>
+      </div>
+      <figure class="about__image">
+        <img src="https://images.unsplash.com/photo-1554048612-b6a482bc67e5?w=600" alt="Portrait of Aro Photography founder and photographer" loading="lazy">
+      </figure>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section testimonials" aria-labelledby="testimonials-title">
+    <div class="section__container">
+      <h2 id="testimonials-title" class="section__title">Kind Words</h2>
+
+      <div class="testimonials__grid">
+        <article class="testimonial-card">
+          <blockquote class="testimonial-card__quote">
+            Aro didn't just take our photos — he understood what we wanted before we could articulate it. Every frame feels intentional.
+          </blockquote>
+          <p class="testimonial-card__attribution">Maya & Jordan, <span class="testimonial-card__type">Wedding</span></p>
+        </article>
+
+        <article class="testimonial-card">
+          <blockquote class="testimonial-card__quote">
+            Working with Aro felt like collaborating with an old friend who happens to be incredibly talented. The portraits exceeded every expectation.
+          </blockquote>
+          <p class="testimonial-card__attribution">Daniela R., <span class="testimonial-card__type">Portrait Session</span></p>
+        </article>
+
+        <article class="testimonial-card">
+          <blockquote class="testimonial-card__quote">
+            Our brand needed imagery that told a deeper story. Aro delivered a visual language we now use across every touchpoint.
+          </blockquote>
+          <p class="testimonial-card__attribution">Nolan Creative, <span class="testimonial-card__type">Brand Session</span></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section cta-section" aria-labelledby="cta-title">
+    <div class="section__container">
+      <h2 id="cta-title" class="cta-section__title">Let's Create Something Worth Keeping</h2>
+      <p class="cta-section__subtitle">Every project starts with a conversation. Tell me what you're envisioning — I'd love to hear it.</p>
+      <a href="booking.html" class="btn btn-primary">Book Your Session</a>
+    </div>
+  </section>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__container">
+      <div class="footer__column footer__brand">
+        <p class="footer__logo">ARO</p>
+        <p class="footer__tagline">Stories worth seeing.</p>
+        <p class="footer__description">Capturing light, emotion, and real moments with cinematic beauty.</p>
+      </div>
+
+      <div class="footer__column footer__nav">
+        <h3 class="footer__heading">Quick Links</h3>
+        <ul class="footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="booking.html">Booking</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__column footer__connect">
+        <h3 class="footer__heading">Connect</h3>
+        <ul class="footer__links">
+          <li><a href="https://instagram.com/arophotography" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          <li><a href="https://pinterest.com/arophotography" target="_blank" rel="noopener noreferrer">Pinterest</a></li>
+          <li><a href="https://linkedin.com/company/arophotography" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="mailto:aro@arophotography.com">aro@arophotography.com</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; 2026 Aro Photography. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="main.js"></script>
+</body>
+</html>

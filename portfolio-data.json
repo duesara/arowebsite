@@ -1,0 +1,26 @@
+// To update the portfolio: add a new image object to the images array below.
+// Required fields: id (unique number), title, category (portraits/weddings/events/lifestyle), src (image URL), alt (description).
+// Optional: featured (true to show on home page).
+
+{
+  "categories": [
+    { "id": "portraits", "label": "Portraits", "description": "Authentic expression, naturally lit." },
+    { "id": "weddings", "label": "Weddings", "description": "Your day, beautifully documented." },
+    { "id": "events", "label": "Events", "description": "Energy and atmosphere, preserved." },
+    { "id": "lifestyle", "label": "Lifestyle", "description": "The poetry in everyday." }
+  ],
+  "images": [
+    { "id": 1, "title": "Quiet Strength", "category": "portraits", "src": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=600", "alt": "Quiet Strength - Portrait photography", "featured": true },
+    { "id": 2, "title": "Natural Light Study", "category": "portraits", "src": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=600", "alt": "Natural Light Study - Portrait photography", "featured": false },
+    { "id": 3, "title": "Unposed", "category": "portraits", "src": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600", "alt": "Unposed - Portrait photography", "featured": false },
+    { "id": 4, "title": "The First Dance", "category": "weddings", "src": "https://images.unsplash.com/photo-1519741497674-611481863552?w=600", "alt": "The First Dance - Wedding photography", "featured": true },
+    { "id": 5, "title": "Golden Hour Vows", "category": "weddings", "src": "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=600", "alt": "Golden Hour Vows - Wedding photography", "featured": true },
+    { "id": 6, "title": "Between Moments", "category": "weddings", "src": "https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=600", "alt": "Between Moments - Wedding photography", "featured": false },
+    { "id": 7, "title": "Industry Summit", "category": "events", "src": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600", "alt": "Industry Summit - Event photography", "featured": false },
+    { "id": 8, "title": "Gallery Opening", "category": "events", "src": "https://images.unsplash.com/photo-1505236858219-8359eb29e329?w=600", "alt": "Gallery Opening - Event photography", "featured": true },
+    { "id": 9, "title": "Celebration", "category": "events", "src": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=600", "alt": "Celebration - Event photography", "featured": false },
+    { "id": 10, "title": "Morning Ritual", "category": "lifestyle", "src": "https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=600", "alt": "Morning Ritual - Lifestyle photography", "featured": false },
+    { "id": 11, "title": "Urban Poetry", "category": "lifestyle", "src": "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=600", "alt": "Urban Poetry - Lifestyle photography", "featured": false },
+    { "id": 12, "title": "Still Life", "category": "lifestyle", "src": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=600", "alt": "Still Life - Lifestyle photography", "featured": false }
+  ]
+}

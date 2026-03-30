@@ -1,0 +1,28 @@
+{
+  "sessions": [
+    {
+      "name": "Portrait Session",
+      "price": "$350",
+      "duration": "1–2 Hours",
+      "description": "One-on-one sessions built around you — your energy, your angles, your narrative. Includes pre-session consultation, 1–2 hour shoot at a location of your choice, and 25+ edited digital images delivered within two weeks."
+    },
+    {
+      "name": "Wedding Photography",
+      "price": "From $2,500",
+      "duration": "Full Day",
+      "description": "Comprehensive coverage from getting ready through the last dance. Includes engagement session, full-day coverage, second shooter, and 300+ edited images in a private online gallery. Custom packages available."
+    },
+    {
+      "name": "Event Coverage",
+      "price": "From $800",
+      "duration": "3–6 Hours",
+      "description": "Corporate events, launches, galas, and gatherings documented with editorial precision. Includes pre-event planning, 3–6 hours of coverage, and 100+ edited images delivered within one week."
+    },
+    {
+      "name": "Lifestyle & Brand",
+      "price": "$500",
+      "duration": "2–3 Hours",
+      "description": "Visual content for personal brands, small businesses, and creative projects. Includes creative direction consultation, 2–3 hour shoot across multiple setups, and 40+ edited images optimized for web and social."
+    }
+  ]
+}

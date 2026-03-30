@@ -1,0 +1,110 @@
+[
+  {
+    "slug": "quiet-strength",
+    "title": "Quiet Strength",
+    "category": "portraits",
+    "image": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800",
+    "alt": "Portrait of a woman in natural light",
+    "featured": true,
+    "order": 1
+  },
+  {
+    "slug": "natural-light-study",
+    "title": "Natural Light Study",
+    "category": "portraits",
+    "image": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800",
+    "alt": "Male portrait in soft natural light",
+    "featured": false,
+    "order": 2
+  },
+  {
+    "slug": "unposed",
+    "title": "Unposed",
+    "category": "portraits",
+    "image": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=800",
+    "alt": "Candid portrait of a young woman",
+    "featured": false,
+    "order": 3
+  },
+  {
+    "slug": "the-first-dance",
+    "title": "The First Dance",
+    "category": "weddings",
+    "image": "https://images.unsplash.com/photo-1519741497674-611481863552?w=800",
+    "alt": "Couple sharing their first dance at wedding reception",
+    "featured": true,
+    "order": 4
+  },
+  {
+    "slug": "golden-hour-vows",
+    "title": "Golden Hour Vows",
+    "category": "weddings",
+    "image": "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=800",
+    "alt": "Wedding ceremony during golden hour",
+    "featured": true,
+    "order": 5
+  },
+  {
+    "slug": "between-moments",
+    "title": "Between Moments",
+    "category": "weddings",
+    "image": "https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=800",
+    "alt": "Bride and groom in a quiet moment",
+    "featured": false,
+    "order": 6
+  },
+  {
+    "slug": "industry-summit",
+    "title": "Industry Summit",
+    "category": "events",
+    "image": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800",
+    "alt": "Speakers at a corporate industry summit",
+    "featured": false,
+    "order": 7
+  },
+  {
+    "slug": "gallery-opening",
+    "title": "Gallery Opening",
+    "category": "events",
+    "image": "https://images.unsplash.com/photo-1505236858219-8359eb29e329?w=800",
+    "alt": "Guests mingling at an art gallery opening",
+    "featured": false,
+    "order": 8
+  },
+  {
+    "slug": "celebration",
+    "title": "Celebration",
+    "category": "events",
+    "image": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800",
+    "alt": "Crowd celebrating at an evening event",
+    "featured": true,
+    "order": 9
+  },
+  {
+    "slug": "morning-ritual",
+    "title": "Morning Ritual",
+    "category": "lifestyle",
+    "image": "https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=800",
+    "alt": "Woman enjoying morning coffee in sunlit room",
+    "featured": true,
+    "order": 10
+  },
+  {
+    "slug": "urban-poetry",
+    "title": "Urban Poetry",
+    "category": "lifestyle",
+    "image": "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=800",
+    "alt": "Person walking through city street",
+    "featured": false,
+    "order": 11
+  },
+  {
+    "slug": "still-life",
+    "title": "Still Life",
+    "category": "lifestyle",
+    "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=800",
+    "alt": "Lifestyle brand flat lay composition",
+    "featured": false,
+    "order": 12
+  }
+]

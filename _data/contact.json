@@ -1,0 +1,15 @@
+{
+  "phone": "(310) 555-0192",
+  "email": "aro@arophotography.com",
+  "location": "Los Angeles, CA",
+  "hours": [
+    { "days": "Monday – Friday", "hours": "9am – 6pm" },
+    { "days": "Saturday", "hours": "10am – 4pm" },
+    { "days": "Sunday", "hours": "Closed" }
+  ],
+  "social": {
+    "instagram": "https://instagram.com/arophotography",
+    "pinterest": "https://pinterest.com/arophotography",
+    "linkedin": "https://linkedin.com/in/arophotography"
+  }
+}
