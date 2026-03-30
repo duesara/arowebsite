@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Book a Session | Aro Photography | Professional photography sessions for portraits, weddings, events, and brand work. Transparent pricing and a simple booking process.">
 
+  <!-- Netlify Identity Widget -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
   <!-- Open Graph Tags -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Book a Session | Aro Photography">
@@ -353,5 +356,18 @@
 
   <!-- Scripts -->
   <script src="main.js"></script>
+
+  <!-- Netlify Identity Redirect -->
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", function(user) {
+        if (!user) {
+          window.netlifyIdentity.on("login", function() {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
 </body>
 </html>

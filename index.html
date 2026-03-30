@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Aro Photography | Light. Emotion. Story. A Los Angeles-based photographer capturing real moments with cinematic beauty.">
 
+  <!-- Netlify Identity Widget -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
   <!-- Open Graph Tags -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Aro Photography | Light. Emotion. Story.">
@@ -214,5 +217,18 @@
 
   <!-- Scripts -->
   <script src="main.js"></script>
+
+  <!-- Netlify Identity Redirect -->
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", function(user) {
+        if (!user) {
+          window.netlifyIdentity.on("login", function() {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
 </body>
 </html>

@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex, nofollow" />
   <title>Aro Photography — Admin</title>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <style>
     body { margin: 0; font-family: -apple-system, sans-serif; background: #0a0a0a; color: #f5f5f0; }
   </style>
@@ -12,5 +13,8 @@
 <body>
   <!-- Decap CMS loads the full admin UI here -->
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  <script>
+    CMS.init();
+  </script>
 </body>
 </html>
